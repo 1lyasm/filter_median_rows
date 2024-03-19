@@ -52,7 +52,7 @@ function updateMedianResultsData(allResultsData, currentIndex, median, AVG_SCORE
   var DATA_START_INDEX = 1;
 
   var allResultsSheet = SpreadsheetApp.getActive().getSheetByName('AllResults');
-  var medianResultsSheet = SpreadsheetApp.getActive().getSheetByName('MedianResults');
+  var medianResultsSheet = SpreadsheetApp.getActive().getSheetByName('MedianResultsAuto');
   var allResultsData = allResultsSheet.getDataRange().getValues();
   var medianResultsData = [];
 
