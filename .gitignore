@@ -1,2 +1,5 @@
 # Python-related
 .venv
+
+# Clasp-related
+.clasp.json
