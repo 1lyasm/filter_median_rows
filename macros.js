@@ -1,4 +1,4 @@
-function createMedianResultsSheet() {
+function createMedianResultsSheet(e) {
   function compute_median(numbers) {
     Logger.log("Numbers: " + numbers);
 
@@ -46,6 +46,10 @@ function updateMedianResultsData(allResultsData, currentIndex, median, AVG_SCORE
     }
   }
 }
+
+    if (e.range.getSheet().getName() !== 'AllResults') {
+        return;
+    }
 
   var MEDIAN_WINDOW = 3;
   var AVG_SCORE_INDEX = 12;
